@@ -3,9 +3,7 @@
   "scripts": {
     "start": "parcel ./src/index.html --open",
     "build": "parcel build index.html",
-    "test": "test",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
+    "test": "test"
   },
   "husky": {
     "hooks": {
@@ -37,8 +35,11 @@
     "styled-components": "4.4.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
+    "@babel/core": "7.7.5",
     "@babel/preset-react": "7.7.4",
+    "@types/react": "16.9.15",
+    "@typescript-eslint/eslint-plugin": "2.10.0",
+    "@typescript-eslint/parser": "2.10.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "eslint": "6.7.2",
@@ -48,10 +49,11 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-prettier": "3.1.1",
     "eslint-plugin-react": "7.17.0",
-    "eslint-plugin-react-hooks": "2.3.0",
+    "eslint-plugin-react-hooks": "1.7.0",
     "husky": "3.1.0",
     "lint-staged": "9.5.0",
     "parcel-bundler": "1.12.4",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "typescript": "3.7.3"
   }
 }
